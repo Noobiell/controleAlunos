@@ -1,0 +1,87 @@
+<div class="container-fluid">
+    <h1 style="text-align: center;">Agendamento Digitação</h1>
+        <form method="POST" action="assets/php/digitacao.php">
+            <div class="row">
+                <div class="col-6">
+                    <label for="sala">Sala</label>
+                    <select name="sala" id="sala" class="form-control">
+                        <option value="1">Sala 1</option>
+                        <option value="2">Sala 2</option>
+                    </select>
+                </div><!--Fim col-->
+
+                <div class="col-6">
+                    <label for="professor">Mapa da sala</label><br>
+                    <button class="btn btn-outline-danger" type="button" style="display: inline-block;" data-toggle="modal" data-target="#sala1">Mapa 1</button>
+                    <button class="btn btn-outline-danger" type="button" style="display: inline-block;" data-toggle="modal" data-target="#sala2">Mapa 2</button>
+                </div><!--Fim col-->
+            </div><!--Fim row-->
+
+            <div class="row separador-formulario">
+                <div class="col-6">
+                    <label for="maquina">Máquina</label>
+                    <select name="maquina" id="maquina" class="form-control">
+                        <option value="1">Computador 1</option>
+                        <option value="2">Computador 2</option>
+                        <option value="3">Computador 3</option>
+                        <option value="4">Computador 4</option>
+                        <option value="5">Computador 5</option>
+                        <option value="6">Computador 6</option>
+                        <option value="7">Computador 7</option>
+                        <option value="8">Computador 8</option>
+                        <option value="9">Computador 9</option>
+                        <option value="10">Computador 10</option>
+                        <option value="11">Computador 11</option>
+                        <option value="12">Computador 12</option>
+                    </select>
+                </div><!--Fim col-->
+
+                <div class="col-6">
+                    <label for="horario">Horario</label>
+                    <select id="horario" name="horario" class="form-control">
+                        <option value="9">9:00</option>
+                        <option value="10">10:00</option>
+                        <option value="11">11:00</option>
+                        <option value="12">12:00</option>
+                        <option value="13">13:00</option>
+                        <option value="14">14:00</option>
+                        <option value="15">15:00</option>
+                        <option value="16">16:00</option>
+                        <option value="17">17:00</option>
+                        <option value="18">18:00</option>
+                        <option value="19">19:00</option>
+                        <option value="20">20:00</option>
+                    </select>
+                </div>
+            </div><!--Fim row-->
+
+            <div class="row">
+                <div class="col-12" style="text-align: center;">
+                    <button class="btn btn-outline-primary" type="submit">Salvar</button>
+                </div><!--Fim col-->
+            </div><!--Fim row-->
+        </form>
+</div><!--Fim container-->
+
+<!---------------------MODAL SALA 1 ------------------------>
+    <div class="modal fade" id="sala1" tabindex="-1" aria-labelledby="sala1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal"><i class="fas fa-times"></i></button>
+                    <img src="assets/img/mapa_sala_1.png" class="img-fluid">
+                </div><!--Fim body-->
+            </div><!--Fim content-->
+        </div><!--Fim dialog-->
+    </div><!--Fim modal-->
+
+    <div class="modal fade" id="sala2" tabindex="-1" aria-labelledby="sala1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" type="button" data-dismiss="modal"><i class="fas fa-times"></i></button>
+                    <img src="assets/img/mapa_sala_2.png" class="img-fluid">
+                </div><!--Fim body-->
+            </div><!--Fim content-->
+        </div><!--Fim dialog-->
+    </div><!--Fim modal-->

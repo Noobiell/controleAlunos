@@ -1,0 +1,176 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+.separador-formulario {
+  margin-top: 10px;
+}
+.separador-menu {
+  width: 1px;
+  height: 30px;
+  background: rgb(194, 194, 194);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/*----------------- BARRA DE NAVEGAÇÃO ----------------*/
+.barra-nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+}
+.link-menu {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+.link-menu:hover {
+  color: rgb(10, 79, 170);
+}
+/*----------------- TELA DE LOGIN -----------------*/
+.container-login {
+  margin-top: 50%;
+}
+#tela-login {
+  position: absolute;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.col-login {
+  border: 1px solid rgba(163, 163, 163, 0.144);
+  border-radius: 30px;
+}
+#usuario {
+  margin-bottom: 5px;
+}
+.cadastre-se {
+  font-size: 12px;
+}
+.btn-entrar {
+  background: rgb(10, 79, 170);
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+  float: right;
+  transition: 0.5s;
+}
+.btn-entrar:hover {
+  color: #fff;
+  background: rgb(0, 110, 255);
+  transition: 0.5s;
+}
+.aviso {
+  color: red;
+}
+.txt-coordenacao {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  font-size: 14px;
+}
+
+/*----------------- TELA DE CADASTRO -----------------*/
+#cadastro {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 60px;
+}
+.btn-cadastrar {
+  float: right;
+  background: rgb(0, 110, 255);
+  color: #fff;
+  margin-top: 15px;
+}
+.container-cadastro {
+  border: 1px solid rgba(170, 170, 170, 0.226);
+  border-radius: 20px;
+  padding: 5px 2px 0px 2px;
+}
+
+/*----------------- ÁREA DO ALUNO -----------------*/
+.container-botoes {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.267);
+  box-shadow: 0px 0px 10px #fff;
+  padding-top: 10%;
+}
+.link-agendamento {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+  background: rgb(0, 140, 255);
+  color: #fff;
+  transition: 0.3s;
+}
+.link-agendamento:hover {
+  color: #fff;
+  text-decoration: none;
+  background: rgb(0, 174, 255);
+  transition: 0.3s;
+}
+.container-area-aluno {
+  border: 1px solid rgba(0, 0, 0, 0.219);
+  border-radius: 30px;
+  padding: 10px;
+}
+.btn-outline-primary {
+  margin-top: 20px;
+}
+#concordo {
+  margin-right: 5px;
+}
+
+/*----------------- AGENDAMENTOS -----------------*/
+#agendamentos {
+  margin-bottom: 20px;
+}
+
+/*----------------- LOGUIN ADM -----------------*/
+.container-adm {
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  height: 500px;
+}
+
+.titulo {
+  font-family: "Rampart One", cursive;
+}
+
+/*----------------- AREA ADM -----------------*/
+#procura {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.container-pesquisa {
+  max-height: 45em;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .img-inicio {
+    display: none;
+  }
+  .container-login {
+    margin-top: 10%;
+  }
+  .col-login {
+    padding-bottom: 20px;
+  }
+  .container-botoes {
+    padding-top: 3%;
+  }
+}
